@@ -10,7 +10,7 @@ class ImportInMaya(ImportInDCC):
     def import_usd(self, file_path):
         try:
             if not os.path.exists(file_path):
-                return None
+                return
 
             import maya.cmds as cmds
             if not cmds.pluginInfo('mayaUsdPlugin', query=True, loaded=True):
@@ -21,7 +21,7 @@ class ImportInMaya(ImportInDCC):
 
         except Exception as e:
             print(e)
-            return None
+            return
 
 class ImportInHoudini(ImportInDCC):
     def import_usd(self, file_path):

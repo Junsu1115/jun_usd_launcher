@@ -1,0 +1,15 @@
+{
+   "maya": {
+    "model": {
+      "rootPrimType": "Xform",
+      "exportVisibility": true,
+      "mergeTransformAndShape": false,
+      "defaultMeshScheme": "catmullClark",
+      "shadingMode": "none",
+      "exportInstances": false,
+      "exportBlendShapes": false,
+      "exportSkels": "none",
+      "exportSkin": "none"
+    }
+  }
+}
