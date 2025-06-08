@@ -1,0 +1,11 @@
+[
+  {
+    "name": "run_create_usd",
+    "description": "사용자가 '퍼블리시'할 때 호출되는 함수입니다. Maya 씬을 USD로 export하는 전체 과정을 실행합니다.",
+    "parameters": {
+      "type": "object",
+      "properties": { }
+    },
+    "required": []
+  }
+]

@@ -1,9 +1,7 @@
 import os
 import json
 from abc import ABC, abstractmethod
-
-from core.export.setting_dir import maya_file_name
-from setting_dir import MakeDir, PrepareSetting
+from set_export_usd import MakeDir, PrepareSetting
 
 class USDExporter(ABC):
     def __init__(self):
@@ -46,7 +44,6 @@ class ExportMaya(USDExporter):
                 export_list = [root_node] + cmds.listRelatives(root_node, allDescendents=True, fullPath=True) or []
                 cmds.select(export_list, replace=True)
                 cmds.mayaUSDExport(file = usdc_file_path, selection=True, **options)
-
 
 def create_usd() -> USDExporter:
     try:
